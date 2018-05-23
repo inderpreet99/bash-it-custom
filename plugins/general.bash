@@ -1,6 +1,6 @@
 
 CLICOLOR=1
-PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/mysql/bin
 
 ff() { find . -name "$@" -print; }
 lll() { ls -laF "$@" | less; }
@@ -18,5 +18,11 @@ afor() {
 	alias | grep -w "$*" | sort
 }
 
-export CLICOLOR
+function sedeasy {
+	sed -i "s/$(echo $1 | sed -e 's/\([[\/.*]\|\]\)/\\&/g')/$(echo $2 | sed -e 's/[\/&]/\\&/g')/g" $3
+}
 
+export CLICOLOR
+export VISUAL=/usr/bin/vim
+export SVN_EDITOR=/usr/bin/vim
+export suffix=$(date +%Y-%m-%d-%H%M%S)
