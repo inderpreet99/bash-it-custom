@@ -1,3 +1,5 @@
 #!/bin/bash
-BASEDIR=$(dirname "$0")
-grep -q -F 'BASH_IT_CUSTOM' ~/.bash_profile ~/.bashrc || echo "BASH_IT_CUSTOM=$BASEDIR\n\n$(cat ~/.bash_profile)" > ~/.bash_profile
+BASEDIR="$( cd "$(dirname "$0")" ; pwd -P )"
+sed '/^export BASH_IT=/ s#$#\
+export BASH_IT_CUSTOM="'"$BASEDIR"'"#' ~/.bash_profile
+
