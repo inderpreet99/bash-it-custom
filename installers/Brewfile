@@ -1,0 +1,13 @@
+brew 'git'
+brew 'npm'
+brew 'yarn', args: ['without-node']
+brew 'node'
+cask 'visual-studio-code'
+cask 'flux'
+cask 'google-chrome'
+cask 'firefox'
+cask 'postman'
+mas 'Slack', id: 803453959
+mas 'CopyClip', id: 595191960
+mas 'The Unarchiver', id: 425424353
+
