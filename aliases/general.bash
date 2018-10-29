@@ -11,3 +11,5 @@ alias p='~/bin/pause'
 alias workdisplay="displayplacer.dms 'id:69733378 res:1920x1200 scaling:off origin:(0,0) degree:0' 'id:1007459267 res:1920x1200x60 scaling:off origin:(1920,-1200) degree:0' 'id:1007459268 res:1920x1200x60 scaling:off origin:(0,-1200) degree:0'"
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+export suffix=$(date)
