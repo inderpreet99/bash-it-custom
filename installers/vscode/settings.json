@@ -1,4 +1,24 @@
 {
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false
+    "window.zoomLevel": 0,
+    "terminal.integrated.scrollback": 20000,
+    "terminal.integrated.copyOnSelection": true,
+    "git.autofetch": true,
+    "terminal.integrated.macOptionIsMeta": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "editor.minimap.enabled": false,
+    "git.confirmSync": false,
+    "editor.formatOnSave": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "runCurrentTest.run": "npm run test -- ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
+    "runCurrentTest.runAndUpdateSnapshots": "npm run test -- -u ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
+    "git.enableSmartCommit": true
 }
