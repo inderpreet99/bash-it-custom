@@ -49,6 +49,37 @@ alias gst='git status'
 alias gup='git fetch && git rebase'
 alias gout='git log --branches --not --remotes'
 alias gx='git annex'
+alias gu='git-update'
+
+function git-update() {
+	stashout=`git stash`
+	stashyes=0
+	if [[ "$?" != 0 ]]; then
+		echo ""
+		echo "!!! Git stash failed!"
+		echo ""
+		git status
+		exit 1
+	else
+		echo "$stashout"
+	fi
+
+	if [[ $stashout = "Saved"* ]]; then
+		echo ""
+		echo "Saved a stash, must stash apply at the end"
+		echo ""
+		stashyes=1
+	fi;
+
+	git checkout -B "$1"
+	git pull
+	if [[ $stashyes = 1 ]]; then
+		echo ""
+		echo "Applying stash"
+		echo ""
+		git stash apply
+	fi
+}
 
 function git-help() {
 	alias | grep -w git | sort
