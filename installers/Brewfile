@@ -2,13 +2,13 @@ brew 'git'
 brew 'npm'
 brew 'yarn', args: ['without-node']
 brew 'node'
+brew 'python' # py3 for aws.sh
 cask 'visual-studio-code'
 cask 'flux'
 cask 'google-chrome'
 cask 'firefox'
 cask 'postman'
 cask 'spectacle'
+cask 'clipy'
 mas 'Slack', id: 803453959
-mas 'CopyClip', id: 595191960
 mas 'The Unarchiver', id: 425424353
-
