@@ -1,7 +1,7 @@
 brew 'git'
 brew 'npm'
 brew 'yarn', args: ['without-node']
-brew 'node'
+brew 'nvm'
 brew 'ffmpeg' # for youtube-dl's audio conversions
 brew 'youtube-dl'
 brew 'python' # py3 for aws.sh
