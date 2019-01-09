@@ -20,5 +20,12 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "runCurrentTest.run": "npm run test -- ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
     "runCurrentTest.runAndUpdateSnapshots": "npm run test -- -u ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "macros": {
+        // use cmd+; to run this
+        "rerunCommand": [
+          "workbench.action.showCommands",
+          "workbench.action.acceptSelectedQuickOpenItem"
+        ]
+    }
 }
