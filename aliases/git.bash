@@ -50,6 +50,8 @@ alias gup='git fetch && git rebase'
 alias gout='git log --branches --not --remotes'
 alias gx='git annex'
 alias gu='git-update'
+alias currbranch="git branch | grep \* | cut -d ' ' -f2"
+alias gpob='git push -u origin $(currbranch)'
 
 function git-update() {
 	stashout=`git stash`
