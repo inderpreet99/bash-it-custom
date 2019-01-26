@@ -1,5 +1,5 @@
 brew 'git'
-brew 'npm'
+brew 'wget'
 brew 'yarn', args: ['without-node']
 brew 'nvm'
 brew 'ffmpeg' # for youtube-dl's audio conversions
