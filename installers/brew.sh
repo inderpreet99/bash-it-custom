@@ -1,2 +1,2 @@
 brew bundle
-nvm use 8.10
+nvm alias default 11.1
