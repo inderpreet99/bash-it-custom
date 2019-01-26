@@ -5,6 +5,11 @@ brew 'nvm'
 brew 'ffmpeg' # for youtube-dl's audio conversions
 brew 'youtube-dl'
 brew 'python' # py3 for aws.sh
+
+# android
+brew 'scrcpy'
+cask 'android-platform-tools'
+
 cask 'visual-studio-code'
 cask 'flux'
 cask 'google-chrome'
