@@ -1,3 +1,6 @@
+# Required for installing Xcode tools
+xcode-select --install
+
 # Show Library folder
 chflags nohidden ~/Library
 
