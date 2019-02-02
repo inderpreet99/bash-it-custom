@@ -15,3 +15,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
 # fixes VSCode font for Mojave https://github.com/Microsoft/vscode/issues/51132
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+
+if [[ ! -f ~/bin/pagekite.py ]]; then
+    mkdir -p ~/bin/
+    curl -o ~/bin/pagekite.py https://pagekite.net/pk/pagekite.py
+    chmod u+x ~/bin/pagekite.py
+fi
