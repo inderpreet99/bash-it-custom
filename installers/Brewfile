@@ -5,13 +5,19 @@ brew 'nvm'
 brew 'ffmpeg' # for youtube-dl's audio conversions
 brew 'youtube-dl'
 brew 'python' # py3 for aws.sh
+
+# Database tools
+brew 'mysql'
 brew 'mongodb'
+cask 'mongodb-compass'
+cask 'db-browser-for-sqlite'
 
 # android
 brew 'scrcpy'
 cask 'android-platform-tools'
 
-cask 'db-browser-for-sqlite'
+cask 'meld'
+cask 'sourcetree'
 cask 'visual-studio-code'
 cask 'flux'
 cask 'google-chrome'
