@@ -1,7 +1,13 @@
+# bash-it-custom
+
+## Intro
+
+* Setups Bash IT.
+* Installs my development tools.
+* Meant to be re-run at anytime to re-initialize.
+
+## Usage
+
 ```
 sh install.sh
-sh installers/brew.sh
-sh installers/vscode.sh
-sh installers/mac.sh
-sh installers/aws.sh
 ```
