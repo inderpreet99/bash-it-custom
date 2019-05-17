@@ -18,6 +18,8 @@ cask 'android-platform-tools'
 
 cask 'meld'
 cask 'sourcetree'
+cask 'java' # required by dbeaver below
+cask 'dbeaver-community'
 cask 'visual-studio-code'
 cask 'flux'
 cask 'google-chrome'
