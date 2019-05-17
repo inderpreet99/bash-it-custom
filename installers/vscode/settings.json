@@ -21,6 +21,19 @@
     "runCurrentTest.run": "npm run test -- ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
     "runCurrentTest.runAndUpdateSnapshots": "npm run test -- -u ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
     "git.enableSmartCommit": true,
+    "codebucket.bitbucketServerHosts": [
+        {
+            "webHost": "https://git.forge.lmig.com",
+            "gitHost": "git.forge.lmig.com:7999"
+        }
+    ],
+
+    // Controls whether suggestions should automatically show up while typing.
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
     "macros": {
         // use cmd+; to run this
         "rerunCommand": [
