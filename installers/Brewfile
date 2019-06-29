@@ -1,6 +1,5 @@
 brew 'git'
 brew 'wget'
-brew 'yarn', args: ['without-node']
 brew 'nvm'
 brew 'ffmpeg' # for youtube-dl's audio conversions
 brew 'youtube-dl'
@@ -27,5 +26,6 @@ cask 'firefox'
 cask 'postman'
 cask 'spectacle'
 cask 'clipy'
+cask 'vnc-viewer'
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
