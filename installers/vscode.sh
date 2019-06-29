@@ -11,4 +11,23 @@ else
     echo "Symlink already established at $HOME/Library/Application Support/Code/User."
 fi
 
+# autocomplete
 code --install-extension TabNine.tabnine-vscode
+
+# styles
+code --install-extension dbaeumer.vscode-eslint
+
+# git
+code --install-extension eamodio.gitlens
+
+# nodejs
+code --install-extension eg2.vscode-npm-script
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension msjsdiag.debugger-for-chrome
+
+# productivity
+code --install-extension coenraads.bracket-pair-colorizer-2
+code --install-extension britesnow.vscode-toggle-quotes
+
+# python
+code --install-extension ms-python.python

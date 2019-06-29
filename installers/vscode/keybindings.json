@@ -18,17 +18,17 @@
         "command": "macros.rerunCommand"
     },
     {
-        "key": "ctrl+s",
+        "key": "cmd+shift+s",
         "command": "git.stageSelectedRanges",
         "when": "isInDiffEditor && editorTextFocus"
     },
     {
-        "key": "ctrl+u",
+        "key": "cmd+shift+u",
         "command": "git.unstageSelectedRanges",
         "when": "isInDiffEditor && editorTextFocus"
     },
     {
-        "key": "ctrl+r",
+        "key": "cmd+shift+r",
         "command": "git.revertSelectedRanges",
         "when": "isInDiffEditor && editorTextFocus"
     }
