@@ -1,0 +1,15 @@
+# wayfair
+brew 'php@7.2'
+brew 'composer'
+brew 'antigen'
+# brew 'getantibody/tap/antibody' # requires > xcode 10.0
+brew 'kubernetes-cli'
+brew 'kubernetes-helm'
+cask 'docker'
+cask 'azure-data-studio'
+cask 'jetbrains-toolbox'
+
+# kafka
+tap "adoptopenjdk/openjdk"
+cask 'adoptopenjdk8'
+brew 'kafka'
