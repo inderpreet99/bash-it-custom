@@ -1,31 +1,35 @@
-brew 'git'
-brew 'wget'
-brew 'nvm'
+
+
+# entertainment
 brew 'ffmpeg' # for youtube-dl's audio conversions
 brew 'youtube-dl'
-brew 'python' # py3 for aws.sh
+
+# node
+# brew 'yarn' # installs node, so use `npm i -g yarn` instead
+# brew 'nvm' # nvm doesn't recommend installing through brew
 
 # Database tools
-brew 'mysql'
-brew 'mongodb'
-cask 'mongodb-compass'
 cask 'db-browser-for-sqlite'
-
-# android
-brew 'scrcpy'
-cask 'android-platform-tools'
-
-cask 'meld'
-cask 'sourcetree'
 cask 'java' # required by dbeaver below
 cask 'dbeaver-community'
+
+# dev tools
+brew 'git'
+brew 'wget'
+brew 'python' # py3 for aws.sh
+cask 'meld'
+cask 'sourcetree'
 cask 'visual-studio-code'
-cask 'flux'
+
+# browsers
 cask 'google-chrome'
 cask 'firefox'
-cask 'postman'
+
+# productivity tools
+cask 'flux'
 cask 'spectacle'
+cask 'postman'
 cask 'clipy'
 cask 'vnc-viewer'
-mas 'Slack', id: 803453959
-mas 'The Unarchiver', id: 425424353
+# mas 'Slack', id: 803453959 # install slack from site, mas disabled on some computers
+cask 'the-unarchiver'
