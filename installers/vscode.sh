@@ -11,9 +11,6 @@ else
     echo "Symlink already established at $HOME/Library/Application Support/Code/User."
 fi
 
-# autocomplete
-code --install-extension TabNine.tabnine-vscode
-
 # styles
 code --install-extension dbaeumer.vscode-eslint
 
