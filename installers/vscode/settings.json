@@ -28,6 +28,7 @@
         "comments": false,
         "strings": true
     },
+    "editor.wordWrap": "on",
     "macros": {
         // use cmd+; to run this
         "rerunCommand": [
