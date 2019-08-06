@@ -1,9 +1,14 @@
 {
     "window.zoomLevel": 0,
-    "terminal.integrated.scrollback": 20000,
+    
     "terminal.integrated.copyOnSelection": true,
-    "git.autofetch": true,
     "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.scrollback": 20000,
+
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -14,13 +19,6 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "editor.minimap.enabled": false,
-    "git.confirmSync": false,
-    "editor.formatOnSave": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "runCurrentTest.run": "npm run test -- ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
-    "runCurrentTest.runAndUpdateSnapshots": "npm run test -- -u ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
-    "git.enableSmartCommit": true,
 
     // Controls whether suggestions should automatically show up while typing.
     "editor.quickSuggestions": {
@@ -28,12 +26,23 @@
         "comments": false,
         "strings": true
     },
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": false,
     "editor.wordWrap": "on",
+
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "runCurrentTest.run": "npm run test -- ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
+    "runCurrentTest.runAndUpdateSnapshots": "npm run test -- -u ${relativeTestPath} --runTestsByPath --testNamePattern \"^${fullTestName}$\"",
+
     "macros": {
         // use cmd+; to run this
         "rerunCommand": [
           "workbench.action.showCommands",
           "workbench.action.acceptSelectedQuickOpenItem"
         ]
-    }
+    },
+
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
 }
