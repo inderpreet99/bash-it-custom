@@ -19,6 +19,7 @@ brew 'git'
 brew 'wget'
 brew 'python' # py3 for aws.sh
 brew 'the_silver_searcher' # ag
+brew 'pre-commit'
 cask 'meld'
 cask 'sourcetree'
 cask 'visual-studio-code'
