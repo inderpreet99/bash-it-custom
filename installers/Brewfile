@@ -14,9 +14,11 @@ cask 'java' # required by dbeaver below
 cask 'dbeaver-community'
 
 # dev tools
+brew 'fzf'
 brew 'git'
 brew 'wget'
 brew 'python' # py3 for aws.sh
+brew 'the_silver_searcher' # ag
 cask 'meld'
 cask 'sourcetree'
 cask 'visual-studio-code'
