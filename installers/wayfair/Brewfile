@@ -8,6 +8,8 @@ brew 'kubernetes-helm'
 cask 'docker'
 cask 'azure-data-studio'
 cask 'jetbrains-toolbox'
+cask 'rescuetime'
+cask 'activitywatch'
 
 # kafka
 tap "adoptopenjdk/openjdk"
