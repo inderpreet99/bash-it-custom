@@ -31,5 +31,10 @@
         "key": "cmd+shift+r",
         "command": "git.revertSelectedRanges",
         "when": "isInDiffEditor && editorTextFocus"
+    },
+    {
+        "key": "alt+shift+t",
+        "command": "trailing-spaces.deleteTrailingSpaces",
+        "when": "editorTextFocus"
     }
 ]
